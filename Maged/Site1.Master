@@ -1,0 +1,184 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Maged.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/font.css" rel="stylesheet" />
+    <link href="Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-fluid">
+           
+        <nav class="navbar navbar-expand-lg fixed-top" >
+            <div class="container" style="color: white; background-color: rgba(255, 99, 71, 0);">
+                <a class="navbar-brand" href="#">
+                    <img src="Images/download.png" width="35" alt="الجوهي" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">الرئيسية <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">عملائنا <span class="sr-only">(current)</span></a>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutnavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">من نحن
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="aboutnavbarDropdown">
+                                <a class="dropdown-item" href="#">مجلس الادارة</a>
+                                <a class="dropdown-item" href="#">نبذه عن الجوهي</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">رؤيتنا ورسالتنا</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="gallarynavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">الوسائط
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="gallarynavbarDropdown">
+                                <a class="dropdown-item" href="#">مكتبة الصور</a>
+                                <a class="dropdown-item" href="#">مكتبة الفيديوهات</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="zonenavbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">القطاعات
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="zonenavbarDropdown">
+                                <a class="dropdown-item" href="#">القطاع الخدمى</a>
+                                <a class="dropdown-item" href="#">القطاع الصناعى</a>
+                                <a class="dropdown-item" href="#">القطاع التجارى</a>
+                                <a class="dropdown-item" href="#">قطاع المقاولات</a>
+                                <a class="dropdown-item" href="#">القطاع التقني</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Search</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        
+        </div>
+        <!--Footer ثم الفوتير-->
+     <!-- Footer -->
+       <footer class="myfooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>
+ من نحن؟ <i class="fa fa-question-circle" style="font-size:30px;color:whitesmoke;"></i>
+
+                        </h3>
+                        <p>
+موقع من خلالة بمكان اي شركة             
+                             او مؤسسة عرض وظائفها
+                            علية كما انه بمكان اي شخص يبحث عن العمل 
+                            زيارت موقعنا 
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <h3>
+                            روابط هامة  <i class="fa fa-globe" style="font-size:30px;color:whitesmoke;"></i>
+                        </h3>
+                        <ul>
+                            <li><a href="~/Home">وظائف في القطاع العام</a></li>
+                            <li><a href="~/Home">وظائف في القطاع الخاص</a></li>
+                            <li><a href="~/Home">وظائف في خارج البلاد</a></li>
+                            <li><a href="~/Home">وظائف في متنوعة </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <h3>
+                             تواصل معنا <i class="fa fa-envelope" style="font-size:30px;color:whitesmoke;"></i>
+                        </h3>
+                        <ul>
+                            <li><a href="https://www.facebook.com/">صفحتنا على الفيس بك</a></li>
+                            <li><a href="https://twitter.com/">تابعنا على تويتر</a></li>
+                            <li><a href="https://www.youtube.com/">شاهدنا على اليوتوب</a></li>
+                            <li><a href="~/Home/Contact">اترك لنا رسالة </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                         <a class="navbar-brand" href="#">
+                    <img src="Images/download.png" width="100" alt="الجوهي" /></a>
+                    </div>
+                </div>              
+            </div>
+
+            <div class="subfooter">
+                <!-- Grid row -->
+                <div class="container">
+                    <div class="row ">
+
+                        <!-- Grid column -->
+                        <div class="col-8">
+
+                            <!--Copyright-->
+                            <p class="text-center text-md-left">
+                                <span>جميع الحقوق محفوظة لدينا-2020</span>
+                            </p>
+
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class=" col-4">
+
+                            <!-- Social buttons -->
+                            <div class="text-center text-md-right">
+                                <ul class="list-unstyled list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-facebook-square" style="font-size:30px;color:whitesmoke;"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-twitter-square" style="font-size:30px;color:whitesmoke;"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-google-plus-square" style="font-size:30px;color:whitesmoke;"></i>
+                                        </a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                            <i class="fa fa-linkedin-square" style="font-size:30px;color:whitesmoke;" ></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!-- Footer -->
+        <script src="Scripts/jquery-3.5.1.min.js"></script>
+        <script src="Scripts/popper.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>
